@@ -38,7 +38,7 @@ public class Player {
 		balance = balance - bet;
 	}
 	
-        // Debugging: Updating parameter list of the function.
+        // Debugging: Updated parameter list of the function.
 	public void receiveWinnings(int winnings, int bet) {
 		if (winnings < 0) throw new IllegalArgumentException("Winnings cannot be negative.");
                 // DEBUGGING: Now, the balance is added with the winning amount and the bet which was placed by player.
