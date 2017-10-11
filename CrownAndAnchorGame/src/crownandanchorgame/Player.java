@@ -40,7 +40,7 @@ public class Player {
 	
 	public void receiveWinnings(int winnings) {
 		if (winnings < 0) throw new IllegalArgumentException("Winnings cannot be negative.");
-                // DEBUGGING
+                // DEBUGGING: The bet placed by player is not added with the balance.
 		balance = balance + winnings;		
 	}
 	
