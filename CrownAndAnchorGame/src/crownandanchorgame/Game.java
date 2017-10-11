@@ -50,7 +50,8 @@ public class Game {
                 
 		if (matches > 0) {
                         // DEBUGGING: Winning amount is sent to the function called receiveWinnings.
-			player.receiveWinnings(winnings);
+                        // DEBUGGING: The bet value is passed through the function.
+			player.receiveWinnings(winnings, bet);
 		}
         return winnings;		
 	}
