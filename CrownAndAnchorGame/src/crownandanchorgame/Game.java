@@ -42,7 +42,6 @@ public class Game {
 			if (d.getValue().equals(pick)) { 
 				matches += 1;
                                 //DEBUGGING.
-                                System.out.println("Player's chosen symbol mached with one of the symbol of dice.");
 			}
 		}
 		
