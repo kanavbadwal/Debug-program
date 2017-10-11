@@ -41,12 +41,15 @@ public class Game {
 			d.roll();
 			if (d.getValue().equals(pick)) { 
 				matches += 1;
+                                //DEBUGGING.
+                                System.out.println("Player's chosen symbol mached with one of the symbol of dice.");
 			}
 		}
 		
 		int winnings = matches * bet;
-
-		if (matches > 0) {			
+                
+		if (matches > 0) {
+                        // DEBUGGING: Winning amount is sent to the function called receiveWinnings.
 			player.receiveWinnings(winnings);
 		}
         return winnings;		
