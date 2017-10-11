@@ -28,6 +28,10 @@ public class Player {
 		return (balance > limit);
 	}
 	
+        /* DEBUGGING: balanceExceedsLimitBy's condition is wrong because it returns false at
+         * even if the bet is equal to balance.
+         *
+         */
 	public boolean balanceExceedsLimitBy(int amount) {
 		return (balance - amount > limit);
 	}
