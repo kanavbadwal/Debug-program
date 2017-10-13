@@ -35,6 +35,7 @@ public class Game {
 		    
 		int matches = 0;
 		for ( Dice d : dice) {
+                    // DEBUGGING: The function roll() is called from dice file which rolls the dices.
 			d.roll();
 			if (d.getValue().equals(pick)) { 
 				matches += 1;

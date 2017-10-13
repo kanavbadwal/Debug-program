@@ -13,7 +13,9 @@ public class Dice {
 	}
 
 	public DiceValue roll() {
-		return DiceValue.getRandom();
+            //DEBUGGING: The value must be stored in variable value.
+                value = DiceValue.getRandom();
+        	return value;
 	}		
 	
 	public String toString() {

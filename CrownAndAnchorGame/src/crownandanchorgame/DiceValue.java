@@ -24,7 +24,13 @@ public enum DiceValue {
 	}
 	
 	public static DiceValue getRandom() {
-		int random = RANDOM.nextInt(DiceValue.SPADE.ordinal());
+                /* DEBUGGING: The last value of enum Dicevalue is spade.
+                 * The function below picks the random value till CLUB.
+                 * It does not include the value of SPADE. Due to this, the win/lose
+                 * ratio comes out around 48%. The random funciton must be incremented
+                 * by one to get the right result.
+                 */
+		int random = RANDOM.nextInt(DiceValue.SPADE.ordinal() + 1);
 		return values()[random];
 	}
 	
